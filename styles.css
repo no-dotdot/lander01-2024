@@ -16,19 +16,42 @@ body {
 }
 
 
-.nav {
-    
-}
 
 .header { 
    flex: auto;
 }
 
-.header-content {
+.header-content,
+ {
     display: flex;
     flex-direction: column;
     flex: auto;
     gap: 20px;
+}
+
+.information-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+.information-images {
+    display: flex;
+    flex: auto;
+    gap: 70px;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.info-img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #1F2937;
+    border-radius: 7px;
 }
 
 .hero-main,
