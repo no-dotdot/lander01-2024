@@ -15,43 +15,71 @@ body {
     gap: 50px;
 }
 
-
-
 .header { 
    flex: auto;
+   flex-wrap: wrap;
 }
 
-.header-content,
- {
+.header-content {
     display: flex;
     flex-direction: column;
     flex: auto;
     gap: 20px;
+    width: 500px;
+    height: 250px;
+    margin: 20px;
+    flex-shrink: 0;
+}
+
+.img {
+    width: 500px;
+    height: 250px;
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 20px;
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .information-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 50px;
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
 }
 .information-images {
     display: flex;
+    flex-direction: column;
     flex: auto;
     gap: 70px;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    text-align: center;
+}
 
+.info-img,
+.info-txt {
+    width: 150px;
+    height: 150px;
+    display: flex;
 }
 
 .info-img {
-    width: 150px;
-    height: 150px;
     border: 2px solid #1F2937;
     border-radius: 7px;
+    flex-shrink: 0;
 }
 
 .hero-main,
@@ -72,16 +100,6 @@ body {
     font-size: 18px;
 }
 
-.img {
-    width: 500px;
-    height: 250px;
-    background-color: #e5e7eb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-
 .button {
     width: 100px;
     border-radius: 7px;
@@ -89,6 +107,26 @@ body {
     background-color: #3882f6;
     border: 0px;
     color: #e5e7eb;
+    font-weight: bold;
+}
+
+.quote-section {
+    background-color: #e5e7eb;
+    padding: 150px 150px 150px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 200;
+    
+}
+
+.push-right {
+    margin-left: auto;
     font-weight: bold;
 }
 
